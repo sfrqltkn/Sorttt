@@ -3,9 +3,7 @@ using System.IO;
 
 namespace Sort
 {
-    class Program
-    {
-        static void Main(string[] args)
+      static void Main(string[] args)
         {
             Console.WriteLine("Please Enter File Name");
             string filee = Console.ReadLine();
