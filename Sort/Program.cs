@@ -24,9 +24,11 @@ namespace Sort
                 {
                     for(int j = 3; j < lines.Length; j++)
                 {
-                    Calculate(lines[i], lines[j]);
+                    
+                    Console.WriteLine(Calculate(lines[i], lines[j]));
+
                 }
-                }
+            }
         }
         public static int Calculate(string source1, string source2) //O(n*m)
         {
@@ -58,7 +60,7 @@ namespace Sort
                         matrix[i - 1, j - 1] + cost);
                 }
             }
-            return matrix[source1Length, source2Length];
+           return matrix[source1Length, source2Length];
         }
     }
 }
